@@ -1,40 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b75b4ce-1c02-448c-b1c4-abfea88c1636" name="Default Changelist" comment="Public folder files:&#10;    - css (update bootstrap to version 4 (was 3))&#10;    - js (update the bootstrap js files)&#10;    - img&#10;    - fonts">
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/shop-homepage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Logo_OpenClassrooms.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/todolist_content.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/todolist_homepage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/TaskType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TaskRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task/list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/list.html.twig" afterDir="false" />
+    <list default="true" id="6b75b4ce-1c02-448c-b1c4-abfea88c1636" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +23,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <first_editor relative-caret-position="102">
+                <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -224,6 +193,24 @@
             <path>
               <item name="Projet8" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet8" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet8" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet8" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="Projet8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,7 +264,7 @@
       <updated>1579811534602</updated>
       <workItem from="1579811535955" duration="8532000" />
       <workItem from="1579821798225" duration="298000" />
-      <workItem from="1579822214391" duration="798000" />
+      <workItem from="1579822214391" duration="1350000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit!">
       <created>1579822324874</created>
@@ -307,11 +294,32 @@
       <option name="project" value="LOCAL" />
       <updated>1579822725827</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Public folder files:&#10;    - css (update bootstrap to version 4 (was 3))&#10;    - js (update the bootstrap js files)&#10;    - img&#10;    - fonts">
+      <created>1579823182770</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579823182770</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refacto: change the appbundle files to src to work on symfony 4">
+      <created>1579823312145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579823312145</updated>
+    </task>
+    <task id="LOCAL-00007" summary="templates files //change some stuff in base TBC">
+      <created>1579823372791</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579823372791</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9628000" />
+    <option name="totallyTimeSpent" value="10180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,9 +332,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -355,7 +362,10 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="refacto: make the controllers to work in symfony 4.4" />
     <MESSAGE value="Symfony files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Symfony files" />
+    <MESSAGE value="Public folder files:&#10;    - css (update bootstrap to version 4 (was 3))&#10;    - js (update the bootstrap js files)&#10;    - img&#10;    - fonts" />
+    <MESSAGE value="refacto: change the appbundle files to src to work on symfony 4" />
+    <MESSAGE value="templates files //change some stuff in base TBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="templates files //change some stuff in base TBC" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php" />
@@ -395,8 +405,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
