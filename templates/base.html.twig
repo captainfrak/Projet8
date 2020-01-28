@@ -26,27 +26,41 @@
 
 <body>
 {% block navbar %}
-<nav class="navbar navbar-light navbar-fixed-top" style="background-color: #e3f2fd;" role="navigation">
-    <a class="navbar-brand" href="/">
-        <img src="{{ asset('img/Logo_OpenClassrooms.png') }}" width="30" height="30" class="d-inline-block align-top" alt="OpenClassrooms"/>
+    <nav class="navbar navbar-expand navbar-light fixed-top" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="{{ path('homepage') }}">
+            <img src="{{ asset('img/Logo_OpenClassrooms.png') }}" width="30" height="30" class="d-inline-block align-top" alt="OpenClassrooms"/>
         To Do List app
-    </a>
-</nav>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                {% if app.user %}
+                    <li class="nav-item mr-1">
+                        <a class="btn nav-link" href="">Liste des taches</a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a class="btn nav-link" href="">Créer une tache</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ path('logout') }}" class="pull-right btn btn-danger">Se déconnecter</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item mr-1">
+                        <a href="{{ path('login') }}" class="btn btn-success">Se connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ path('user_create') }}" class="btn btn-primary">Créer un utilisateur</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
 {% endblock %}
 <!-- Page Content -->
-<div class="container">
-    <div class="row">
-        <a href="{{ path('user_create') }}" class="btn btn-primary">Créer un utilisateur</a>
-
-        {% if app.user %}
-            <a href="{{ path('logout') }}" class="pull-right btn btn-danger">Se déconnecter</a>
-        {% endif %}
-
-        {% if not app.user and 'login' != app.request.attributes.get('_route') %}
-            <a href="{{ path('login') }}" class="btn btn-success">Se connecter</a>
-        {% endif %}
-    </div>
-
+<div class="container" id="main-container">
     <div class="row">
         <div class="col-md-12">
             {% for flash_message in app.session.flashBag.get('success') %}
