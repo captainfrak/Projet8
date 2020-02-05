@@ -17,7 +17,7 @@ class TaskController extends AbstractController
      */
     public function listAction()
     {
-        $task = $this->getDoctrine()->getRepository(Task::class)->findAll();
+        $task = $this->getDoctrine()->getRepository(Task::class)->findBy(['isDone' => 0],['createdAt' => 'DESC']);
         return $this->render('task/list.html.twig', ['tasks' => $task]);
     }
 
@@ -36,6 +36,7 @@ class TaskController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
 
+            $task->isDone(0);
             $em->persist($task);
             $em->flush();
 
@@ -83,9 +84,23 @@ class TaskController extends AbstractController
         $task->toggle(!$task->isDone());
         $this->getDoctrine()->getManager()->flush();
 
+        if ($task->isDone() == 1) {
         $this->addFlash('success', sprintf('La tâche %s a bien été marquée comme faite.', $task->getTitle()));
-
         return $this->redirectToRoute('task_list');
+        } else {
+        $this->addFlash('success', sprintf('La tâche %s a bien été marquée comme non faite.', $task->getTitle()));
+        return $this->redirectToRoute('task_list');
+        }
+
+    }
+
+    /**
+     * @Route("/tasksdone", name="task_done")
+     */
+    public function doneTasks()
+    {
+        $task = $this->getDoctrine()->getRepository(Task::class)->findBy(['isDone' => 1],['createdAt' => 'DESC']);
+        return $this->render('task/done.html.twig', ['tasks' => $task]);
     }
 
     /**
@@ -95,6 +110,9 @@ class TaskController extends AbstractController
      */
     public function deleteTaskAction(Task $task)
     {
+        // if task->author != $this->getUser();
+        // $this->addFlash('error', 'Vous ne pouvez modifier que les taches que vous avez crées')
+        // redirectToRoute('task_list');
         $em = $this->getDoctrine()->getManager();
         $em->remove($task);
         $em->flush();

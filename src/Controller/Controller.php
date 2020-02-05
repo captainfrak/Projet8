@@ -13,9 +13,9 @@ class Controller extends AbstractController
     public function indexAction()
     {
         $user = $this->getUser();
-        if ($user === null) {
-            return $this->redirectToRoute('login');
-        }
+        //if ($user === null) {
+        //    return $this->redirectToRoute('login');
+        //}
         return $this->render('index.html.twig');
     }
 }
