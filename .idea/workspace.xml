@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="refacto: fix the navbarexpand to md instead of lg">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/P8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/P8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-    </list>
+    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +172,7 @@
       <workItem from="1580290421281" duration="10733000" />
       <workItem from="1580900484149" duration="393000" />
       <workItem from="1580903971823" duration="5244000" />
-      <workItem from="1580915519756" duration="24525000" />
+      <workItem from="1580915519756" duration="24832000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit!">
       <created>1579822324874</created>
@@ -355,7 +349,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581077529375</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add : add the $role property and isAdmin() &amp; isUser() methods">
+      <created>1581077681678</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1581077681678</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages">
+      <created>1581077910213</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1581077910213</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -371,7 +379,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First Commit!" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="refacto: make the controllers to work in symfony 4.4" />
     <MESSAGE value="Symfony files" />
@@ -395,7 +402,9 @@
     <MESSAGE value="add: add a commented if() to redirect admin to users_list instead of homepage" />
     <MESSAGE value="add: add the *Type::class in the fields to improve the forms" />
     <MESSAGE value="add: add methods doneTasks() anonymousTaskList() taskToAnonymous and add the possibility for an admin to delete task that belong to Anonymous user" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: add methods doneTasks() anonymousTaskList() taskToAnonymous and add the possibility for an admin to delete task that belong to Anonymous user" />
+    <MESSAGE value="add : add the $role property and isAdmin() &amp; isUser() methods" />
+    <MESSAGE value="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1581007957365">
@@ -414,10 +423,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581072233755" />
-    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2" timestamp="1581077681432">
+    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2" timestamp="1581077910015">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077681432" />
+    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077910015" />
     <state x="2079" y="429" key="com.intellij.ide.util.TipDialog" timestamp="1580916190695">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
