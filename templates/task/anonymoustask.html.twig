@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block header_title %}<h1>Taches sans utilisateur</h1>{% endblock %}
+{% block header_img %}{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <table class="table text-center">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Titre de la tache</th>
+                <th>contenu de la tache</th>
+                <th></th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for task in tasks %}
+                <tr>
+                    <th scope="row">{{ loop.index }}</th>
+                    <td>{{ task.title }}</td>
+                    <td>{{ task.content }}</td>
+                    <td></td>
+                    <td>
+                        <a href="{{ path('task_change', {'id' : task.id }) }}" class="btn btn-info btn-sm">Passer en Anonyme</a>
+                        <a href="{{ path('task_delete', {'id' : task.id }) }}" class="btn btn-danger btn-sm">supprimer</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -13,9 +13,14 @@ class Controller extends AbstractController
     public function indexAction()
     {
         $user = $this->getUser();
-        //if ($user === null) {
-        //    return $this->redirectToRoute('login');
-        //}
+        if ($user == null) {
+            return $this->redirectToRoute('app_login');
+        }
+
+        // Uncomment if you want to redirect Admin to user_list
+        /*if ($user->isAdmin()) {
+            return $this->redirectToRoute('user_list');
+        }*/
         return $this->render('index.html.twig');
     }
 }

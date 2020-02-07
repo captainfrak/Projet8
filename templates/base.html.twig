@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>To Do List app</title>
+    <title>
+        {% block title %}
+            To Do List app
+        {% endblock %}
+    </title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -38,21 +42,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 {% if app.user %}
-                    <li class="nav-item mr-1">
-                        <a class="btn nav-link" href="">Liste des taches</a>
-                    </li>
-                    <li class="nav-item mr-1">
-                        <a class="btn nav-link" href="">Créer une tache</a>
-                    </li>
+                    {% if app.user.isAdmin %}
+                        <li class="nav-item mr-1">
+                            <a href="{{ path('app_register') }}" class="btn btn-primary">Créer un utilisateur</a>
+                        </li>
+                        <li class="nav-item mr-1">
+                            <a href="{{ path('user_list') }}" class="btn btn-primary">Liste des utilisateurs</a>
+                        </li>
+                        <li class="nav-item mr-1">
+                            <a href="{{ path('task_anonymous') }}" class="btn btn-primary">Taches sans utilisateur</a>
+                        </li>
+                    {% endif %}
+                    {% if app.user.isUser %}
+                        <li class="nav-item mr-1">
+                            <a class="btn nav-link" href="{{ path('task_list') }}">Liste des taches</a>
+                        </li>
+                        <li class="nav-item mr-1">
+                            <a class="btn nav-link" href="{{ path('task_create') }}">Créer une tache</a>
+                        </li>
+                    {% endif %}
                     <li class="nav-item">
-                        <a href="{{ path('logout') }}" class="pull-right btn btn-danger">Se déconnecter</a>
+                        <a href="{{ path('app_logout') }}" class="pull-right btn btn-danger">Se déconnecter</a>
                     </li>
                 {% else %}
                     <li class="nav-item mr-1">
-                        <a href="{{ path('login') }}" class="btn btn-success">Se connecter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ path('user_create') }}" class="btn btn-primary">Créer un utilisateur</a>
+                        <a href="{{ path('app_login') }}" class="btn btn-success">Se connecter</a>
                     </li>
                 {% endif %}
             </ul>
@@ -62,7 +76,7 @@
 <!-- Page Content -->
 <div class="container" id="main-container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
             {% for flash_message in app.session.flashBag.get('success') %}
                 <div class="alert alert-success" role="alert">
                     <strong>Superbe !</strong> {{ flash_message }}

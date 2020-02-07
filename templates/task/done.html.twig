@@ -5,7 +5,8 @@
 {% block body %}
     <div class="row">
         <div class="col-12 text-center">
-            <a href="{{ path('task_list') }}" class="btn btn-lg btn-info">retournez au taches en cours</a>
+            <a href="{{ path('task_create') }}" class="btn btn-lg btn-success">Créer une tâche</a>
+            <a href="{{ path('task_list') }}" class="btn btn-lg btn-info">Taches à faire</a>
         </div>
     </div>
     <div class="row">
@@ -16,6 +17,15 @@
                         <h5 class="card-title text-center">
                             <a href="{{ path('task_edit', {'id' : task.id }) }}">{{ task.title }}</a>
                         </h5>
+                        <small class="text-center">
+                            <p>par:
+                                {% if task.user is null %}
+                                    Anonyme
+                                {% else %}
+                                    {{ task.user.username }}
+                                {% endif %}
+                            </p>
+                        </small>
                     </div>
                     <div class="card-body">
                         <p class="card-text">{{ task.content }}</p>
@@ -39,7 +49,7 @@
                 </div>
             </div>
         {% else %}
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-4">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-4 text-center">
                 <div class="alert alert-warning" role="alert">
                     Il n'y a pas encore de tâche terminée. <a href="{{ path('task_create') }}" class="btn btn-warning pull-right">Créer une tâche</a>
                 </div>
