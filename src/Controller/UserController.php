@@ -4,74 +4,115 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserType;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class UserController extends AbstractController
 {
+    // *** ALL USER CONTROLLER IS FOR ROLE_ADMIN ONLY *** //
     /**
-     * @Route("/users", name="user_list")
+     * @Route("/admin/users", name="user_list")
      */
-    public function listAction()
+    public function listUsers()
     {
-        return $this->render('user/list.html.twig', ['users' => $this->getDoctrine()->getRepository(User::class)->findAll()]);
-    }
-
-    //TODO move this in separate controller with new route
-    /**
-     * @Route("/users/create", name="user_create")
-     * @param Request $request
-     * @return RedirectResponse|Response
-     */
-    public function createAction(Request $request)
-    {
-        $user = new User();
-        $form = $this->createForm(UserType::class, $user);
-
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $password = $this->get('security.password_encoder')->encodePassword($user, $user->getPassword());
-            $user->setPassword($password);
-
-            $em->persist($user);
-            $em->flush();
-
-            $this->addFlash('success', "L'utilisateur a bien été ajouté.");
-
-            return $this->redirectToRoute('user_list');
+        $user = $this->getUser();
+        if ($user) {
+            if ($user->isAdmin()) {
+                return $this->render('user/list.html.twig', ['users' => $this->getDoctrine()->getRepository(User::class)->findAll()]);
+            }
         }
-
-        return $this->render('user/create.html.twig', ['form' => $form->createView()]);
+        return $this->redirectToRoute('homepage');
     }
 
     /**
-     * @Route("/users/{id}/edit", name="user_edit")
+     * @Route("/admin/users/{id}/edit", name="user_edit")
      * @param User $user
      * @param Request $request
+     * @param EntityManagerInterface $entityManager
+     * @param UserPasswordEncoderInterface $passwordEncoder
      * @return RedirectResponse|Response
      */
-    public function editAction(User $user, Request $request)
+    public function editAction(User $user, Request $request, EntityManagerInterface $entityManager, UserPasswordEncoderInterface $passwordEncoder)
     {
-        $form = $this->createForm(UserType::class, $user);
+        $currentUser = $this->getUser();
+        if ($currentUser) {
+            if ($currentUser->isAdmin()) {
+                $form = $this->createForm(UserType::class, $user);
+                $form->handleRequest($request);
 
-        $form->handleRequest($request);
+                if ($form->isSubmitted() && $form->isValid()) {
+                    if ($form->get('password')->getData() != null) {
+                        $user->setPassword(
+                            $passwordEncoder->encodePassword(
+                                $user,
+                                $form->get('password')->getData()
+                            )
+                        );
+                    }
+                    $entityManager->persist($user);
+                    $entityManager->flush();
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $password = $this->get('security.password_encoder')->encodePassword($user, $user->getPassword());
-            $user->setPassword($password);
+                    $this->addFlash('success', "L'utilisateur a bien été modifié");
 
-            $this->getDoctrine()->getManager()->flush();
-
-            $this->addFlash('success', "L'utilisateur a bien été modifié");
-
-            return $this->redirectToRoute('user_list');
+                    return $this->redirectToRoute('user_list');
+                }
+                return $this->render('user/edit.html.twig', ['form' => $form->createView(), 'user' => $user]);
+            }
         }
+        return $this->redirectToRoute('homepage');
+    }
 
-        return $this->render('user/edit.html.twig', ['form' => $form->createView(), 'user' => $user]);
+    /**
+     * @Route("/admin/users/{id}/delete", name="user_delete")
+     * @param User $user
+     * @param EntityManagerInterface $entityManager
+     * @return RedirectResponse
+     */
+    public function deleteAction(User $user, EntityManagerInterface $entityManager)
+    {
+        $currentUser = $this->getUser();
+        if ($currentUser) {
+            if ($currentUser->isAdmin()) {
+                $entityManager->remove($user);
+                $entityManager->flush();
+
+                $this->addFlash('success','L\'utilisateur a bien été supprimé');
+
+                return $this->redirectToRoute('user_list');
+            }
+        }
+        return $this->redirectToRoute('homepage');
+    }
+
+    /**
+     * @Route("/admin/admin/changerole/{id}", name="user_changerole")
+     * @param User $user
+     * @param EntityManagerInterface $entityManager
+     * @return RedirectResponse
+     */
+    public function changeRole(User $user, EntityManagerInterface $entityManager)
+    {
+        $currentUser = $this->getUser();
+        if ($currentUser) {
+            if ($currentUser->isAdmin()) {
+                if ($user->isAdmin()) {
+                    $user->setRoles(['ROLE_USER']);
+                    $entityManager->persist($user);
+                    $entityManager->flush();
+                    return $this->redirectToRoute('user_list');
+                } elseif (!$user->isAdmin()) {
+                    $user->setRoles(['ROLE_ADMIN']);
+                    $entityManager->persist($user);
+                    $entityManager->flush();
+                    return $this->redirectToRoute('user_list');
+                }
+            }
+        }
+        return $this->redirectToRoute('homepage');
     }
 }
