@@ -1,0 +1,10 @@
+App\Entity\Task:
+    task_1:
+        title: testEdit
+        content: testEdit
+    task_2:
+        title: testDelete
+        content: testDelete
+    task_3:
+        title: testToAnonymous
+        content: test

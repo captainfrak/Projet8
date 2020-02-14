@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/P8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/P8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="add: files for nelmio_alice fixtures bundle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +202,7 @@
       <workItem from="1580900484149" duration="393000" />
       <workItem from="1580903971823" duration="5244000" />
       <workItem from="1580915519756" duration="28180000" />
-      <workItem from="1581343689053" duration="40244000" />
+      <workItem from="1581343689053" duration="41540000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit!">
       <created>1579822324874</created>
@@ -411,7 +400,42 @@
       <option name="project" value="LOCAL" />
       <updated>1581077926121</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add : changes in framework files">
+      <created>1581674572964</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1581674572964</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refacto: translation of a button, and code covering files">
+      <created>1581674718657</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1581674718657</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add: files for nelmio_alice fixtures bundle">
+      <created>1581674846903</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1581674846903</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add: remove loginCheck() method (was not used)">
+      <created>1581675331027</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1581675331027</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add: change &quot;route&quot; fir changeRole() method and addFlash() message">
+      <created>1581675724958</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1581675724958</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -427,11 +451,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First Commit" />
-    <MESSAGE value="refacto: make the controllers to work in symfony 4.4" />
-    <MESSAGE value="Symfony files" />
-    <MESSAGE value="Public folder files:&#10;    - css (update bootstrap to version 4 (was 3))&#10;    - js (update the bootstrap js files)&#10;    - img&#10;    - fonts" />
-    <MESSAGE value="refacto: change the appbundle files to src to work on symfony 4" />
     <MESSAGE value="templates files //change some stuff in base TBC" />
     <MESSAGE value="add : add bootstrap 4 layout to twig config" />
     <MESSAGE value="refacto : put back the 70px padding-top on the main container" />
@@ -452,7 +471,12 @@
     <MESSAGE value="add: add methods doneTasks() anonymousTaskList() taskToAnonymous and add the possibility for an admin to delete task that belong to Anonymous user" />
     <MESSAGE value="add : add the $role property and isAdmin() &amp; isUser() methods" />
     <MESSAGE value="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages" />
+    <MESSAGE value="add : changes in framework files" />
+    <MESSAGE value="refacto: translation of a button, and code covering files" />
+    <MESSAGE value="add: files for nelmio_alice fixtures bundle" />
+    <MESSAGE value="add: remove loginCheck() method (was not used)" />
+    <MESSAGE value="add: change &quot;route&quot; fir changeRole() method and addFlash() message" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: change &quot;route&quot; fir changeRole() method and addFlash() message" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1988" y="266" key="#CLI_Interpreters" timestamp="1581429984100">
@@ -480,10 +504,11 @@
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581072233755" />
     <state x="2051" y="318" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581443188274" />
-    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2" timestamp="1581077925965">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1499" y="84" width="1362" height="798" key="CommitChangelistDialog2" timestamp="1581675871127">
+      <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077925965" />
+    <state x="1499" y="84" width="1362" height="798" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581675871127" />
     <state x="2233" y="427" key="NewPhpClassDialog" timestamp="1581441865572">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
