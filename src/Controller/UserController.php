@@ -90,7 +90,7 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/admin/admin/changerole/{id}", name="user_changerole")
+     * @Route("/admin/changerole/{id}", name="user_changerole")
      * @param User $user
      * @param EntityManagerInterface $entityManager
      * @return RedirectResponse
@@ -104,11 +104,13 @@ class UserController extends AbstractController
                     $user->setRoles(['ROLE_USER']);
                     $entityManager->persist($user);
                     $entityManager->flush();
+                    $this->addFlash('success', 'Le ROLE a bien été changé en USER');
                     return $this->redirectToRoute('user_list');
                 } elseif (!$user->isAdmin()) {
                     $user->setRoles(['ROLE_ADMIN']);
                     $entityManager->persist($user);
                     $entityManager->flush();
+                    $this->addFlash('success', 'Le ROLE a bien été changé en ADMIN');
                     return $this->redirectToRoute('user_list');
                 }
             }
