@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="" />
+    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="add: files for nelmio_alice fixtures bundle">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Task.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="JoinTasksAndUser" />
+        <entry key="$PROJECT_DIR$" value="MakeAuth" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -128,6 +132,17 @@
       <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/liip/test-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/theofidry/alice-data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/alice" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XO4mFJjP6OrjYujdjEHMFemgi2" />
@@ -145,16 +160,30 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/task" />
-      <recent name="$PROJECT_DIR$/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/src/Controller" />
       <recent name="$PROJECT_DIR$/src/Entity" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/testsFixture" />
+      <recent name="$PROJECT_DIR$/tests/EntityTest" />
+      <recent name="$PROJECT_DIR$/templates/task" />
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SecurityControllerTest.testLoginPageWrongCredentials" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\SecurityControllerTest" file="$PROJECT_DIR$/tests/SecurityControllerTest.php" method="testLoginPageWrongCredentials" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.SecurityControllerTest.testLoginPageWrongCredentials" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -172,7 +201,8 @@
       <workItem from="1580290421281" duration="10733000" />
       <workItem from="1580900484149" duration="393000" />
       <workItem from="1580903971823" duration="5244000" />
-      <workItem from="1580915519756" duration="24832000" />
+      <workItem from="1580915519756" duration="28180000" />
+      <workItem from="1581343689053" duration="41540000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit!">
       <created>1579822324874</created>
@@ -363,7 +393,49 @@
       <option name="project" value="LOCAL" />
       <updated>1581077910213</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages">
+      <created>1581077926121</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1581077926121</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add : changes in framework files">
+      <created>1581674572964</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1581674572964</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refacto: translation of a button, and code covering files">
+      <created>1581674718657</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1581674718657</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add: files for nelmio_alice fixtures bundle">
+      <created>1581674846903</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1581674846903</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add: remove loginCheck() method (was not used)">
+      <created>1581675331027</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1581675331027</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add: change &quot;route&quot; fir changeRole() method and addFlash() message">
+      <created>1581675724958</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1581675724958</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -379,11 +451,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First Commit" />
-    <MESSAGE value="refacto: make the controllers to work in symfony 4.4" />
-    <MESSAGE value="Symfony files" />
-    <MESSAGE value="Public folder files:&#10;    - css (update bootstrap to version 4 (was 3))&#10;    - js (update the bootstrap js files)&#10;    - img&#10;    - fonts" />
-    <MESSAGE value="refacto: change the appbundle files to src to work on symfony 4" />
     <MESSAGE value="templates files //change some stuff in base TBC" />
     <MESSAGE value="add : add bootstrap 4 layout to twig config" />
     <MESSAGE value="refacto : put back the 70px padding-top on the main container" />
@@ -404,9 +471,22 @@
     <MESSAGE value="add: add methods doneTasks() anonymousTaskList() taskToAnonymous and add the possibility for an admin to delete task that belong to Anonymous user" />
     <MESSAGE value="add : add the $role property and isAdmin() &amp; isUser() methods" />
     <MESSAGE value="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages" />
+    <MESSAGE value="add : changes in framework files" />
+    <MESSAGE value="refacto: translation of a button, and code covering files" />
+    <MESSAGE value="add: files for nelmio_alice fixtures bundle" />
+    <MESSAGE value="add: remove loginCheck() method (was not used)" />
+    <MESSAGE value="add: change &quot;route&quot; fir changeRole() method and addFlash() message" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: change &quot;route&quot; fir changeRole() method and addFlash() message" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1988" y="266" key="#CLI_Interpreters" timestamp="1581429984100">
+      <screen x="1440" y="64" width="1920" height="1080" />
+    </state>
+    <state x="1988" y="266" key="#CLI_Interpreters/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581429984100" />
+    <state x="2058" y="215" key="#SecurityControllerTest.testLoginPageWrongCredentials" timestamp="1581429986380">
+      <screen x="1440" y="64" width="1920" height="1080" />
+    </state>
+    <state x="2058" y="215" key="#SecurityControllerTest.testLoginPageWrongCredentials/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581429986380" />
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1581007957365">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -419,14 +499,24 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581072154181" />
-    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581072233755">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="2051" y="318" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581443188274">
+      <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581072233755" />
-    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2" timestamp="1581077910015">
+    <state x="2051" y="318" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581443188274" />
+    <state x="1499" y="84" width="1362" height="798" key="CommitChangelistDialog2" timestamp="1581675871127">
+      <screen x="1440" y="64" width="1920" height="1080" />
+    </state>
+    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077925965" />
+    <state x="1499" y="84" width="1362" height="798" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581675871127" />
+    <state x="2233" y="427" key="NewPhpClassDialog" timestamp="1581441865572">
+      <screen x="1440" y="64" width="1920" height="1080" />
+    </state>
+    <state x="2233" y="427" key="NewPhpClassDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581441865572" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1581077934466">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077910015" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077934466" />
     <state x="2079" y="429" key="com.intellij.ide.util.TipDialog" timestamp="1580916190695">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>

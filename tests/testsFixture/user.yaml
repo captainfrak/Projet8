@@ -1,0 +1,21 @@
+App\Entity\User:
+    user_user:
+        username: testUser
+        password: \$2y\$10\$EVsUKAgjHqVbtXWlejg1NuVwC5tc2yZDph4hBDSrAMdFTaMDk4JKi
+        email: test\@test.com
+        roles: ['ROLE_USER']
+    user_admin:
+        username: testAdmin
+        password: \$2y\$10\$S542/RYuUoWKQIuWovkGDeN6M7HQuRme2BferldEfmkx0BAK4Ltt6
+        email: admin\@test.com
+        roles: ['ROLE_ADMIN']
+    user_anonymous:
+        username: testAnonymous
+        password: \$2y\$10\$S542/RYuUoWKQIuWovkGDeN6M7HQuRme2BferldEfmkx0BAK4Ltt6
+        email: ano\@nymous.com
+        roles:
+    user_dummy:
+        username: testDummy
+        password: \$2y\$10\$S542/RYuUoWKQIuWovkGDeN6M7HQuRme2BferldEfmkx0BAK4Ltt6
+        email: test\@dummy.com
+        roles: ['ROLE_USER']

@@ -86,7 +86,7 @@ class Task
         $this->content = $content;
     }
 
-    public function isDone()
+    public function isDone(): bool
     {
         return $this->isDone;
     }

@@ -11,14 +11,6 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/login_check", name="login_check")
-     */
-    public function loginCheck()
-    {
-        // This code is never executed.
-    }
-
-    /**
      * @Route("/login", name="app_login")
      * @param AuthenticationUtils $authenticationUtils
      * @return Response
@@ -39,6 +31,5 @@ class SecurityController extends AbstractController
      */
     public function logout()
     {
-        throw new Exception('This method can be blank - it will be intercepted by the logout key on your firewall');
     }
 }
