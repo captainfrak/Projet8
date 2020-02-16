@@ -122,7 +122,6 @@ class TaskControllerTest extends WebTestCase
         $this->assertEquals(302, $client->getResponse()->getStatusCode());
     }
 
-    // TODO refacto this shit
     /*public function testTaskEditWithUser()
     {
         $client = static::createClient();

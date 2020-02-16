@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="add: files for nelmio_alice fixtures bundle" />
+    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="refacto">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Controller/Controller.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/Controller.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Controller/RegistrationController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/RegistrationController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Controller/SecurityController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/SecurityController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Controller/TaskController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/TaskController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Controller/UserController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/UserController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Controller/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Entity/Task.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Entity/Task.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Entity/User.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Entity/User.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Entity/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Entity/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Entity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Entity/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Form/RegistrationFormType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/RegistrationFormType.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Form/TaskType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/TaskType.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Form/UserType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/UserType.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Form/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Kernel.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Kernel.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Migrations/Version20200124151810.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/Version20200124151810.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Migrations/Version20200206164145.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/Version20200206164145.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Migrations/Version20200206190955.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/Version20200206190955.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Migrations/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Migrations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Repository/TaskRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Repository/TaskRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Repository/UserRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Repository/UserRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Repository/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Repository/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Repository/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Repository/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Security/LoginAuthenticator.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Security/LoginAuthenticator.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Security/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Security/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/Security/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Security/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SecurityControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SecurityControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TaskControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TaskControllerTest.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -431,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581675724958</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="add: files for nelmio_alice fixtures bundle">
+      <created>1581870323673</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1581870323673</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -469,10 +512,10 @@
     <MESSAGE value="add : add the changeRole() method&#10;refacto: add if() to control user and if() user isAdmin() to redirect non-user or non-admin out of administration pages" />
     <MESSAGE value="add : changes in framework files" />
     <MESSAGE value="refacto: translation of a button, and code covering files" />
-    <MESSAGE value="add: files for nelmio_alice fixtures bundle" />
     <MESSAGE value="add: remove loginCheck() method (was not used)" />
     <MESSAGE value="add: change &quot;route&quot; fir changeRole() method and addFlash() message" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: change &quot;route&quot; fir changeRole() method and addFlash() message" />
+    <MESSAGE value="add: files for nelmio_alice fixtures bundle" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: files for nelmio_alice fixtures bundle" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1988" y="266" key="#CLI_Interpreters" timestamp="1581429984100">
@@ -500,19 +543,24 @@
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581072233755" />
     <state x="2051" y="318" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581443188274" />
-    <state x="1499" y="84" width="1362" height="798" key="CommitChangelistDialog2" timestamp="1581675871127">
+    <state x="1499" y="87" width="1362" height="798" key="CommitChangelistDialog2" timestamp="1581870818696">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077925965" />
-    <state x="1499" y="84" width="1362" height="798" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581675871127" />
+    <state x="1499" y="87" width="1362" height="798" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581870818696" />
     <state x="2233" y="427" key="NewPhpClassDialog" timestamp="1581441865572">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="2233" y="427" key="NewPhpClassDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581441865572" />
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1581077934466">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1867" y="278" key="Vcs.Push.Dialog.v2" timestamp="1581870328108">
+      <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077934466" />
+    <state x="1867" y="278" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581870328108" />
+    <state x="1540" y="164" width="1720" height="880" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1581870287533">
+      <screen x="1440" y="64" width="1920" height="1080" />
+    </state>
+    <state x="1540" y="164" width="1720" height="880" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581870287533" />
     <state x="2079" y="429" key="com.intellij.ide.util.TipDialog" timestamp="1580916190695">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>

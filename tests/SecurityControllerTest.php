@@ -37,7 +37,6 @@ class SecurityControllerTest extends WebTestCase
         $this->loadFixtureFiles([__DIR__ . '/testsFixture/user.yaml']);
         $client = static::createClient();
 
-        //TODO check this when doing forms
         //$crawler = $client->request('GET', '/login');
         //$form = $crawler->selectButton('Se Connecter')->form([
         //    'username' => 'testUser',
