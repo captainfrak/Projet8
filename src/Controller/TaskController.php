@@ -22,14 +22,14 @@ class TaskController extends AbstractController
         if (!$this->getUser()) {
             return $this->redirectToRoute('homepage');
         }
-        $task = $this->getDoctrine()->getRepository(Task::class)->findBy(['isDone' => 0],['createdAt' => 'DESC']);
+        $task = $this->getDoctrine()->getRepository(Task::class)->findBy(['isDone' => 0], ['createdAt' => 'DESC']);
+
         return $this->render('task/list.html.twig', ['tasks' => $task]);
     }
 
     /**
      * @Route("/tasks/create", name="task_create")
-     * @param Request $request
-     * @param EntityManagerInterface $em
+     *
      * @return RedirectResponse|Response
      */
     public function createAction(Request $request, EntityManagerInterface $em)
@@ -49,19 +49,19 @@ class TaskController extends AbstractController
             $em->flush();
 
             $this->addFlash('success', 'La tâche a été bien été ajoutée.');
+
             return $this->redirectToRoute('task_list');
         }
+
         return $this->render('task/create.html.twig', ['form' => $form->createView()]);
     }
 
     /**
      * @Route("/tasks/{id}/edit", name="task_edit")
-     * @param Task $task
-     * @param Request $request
-     * @param EntityManagerInterface $entityManager
+     *
      * @return RedirectResponse|Response
      */
-    public function editAction(Task $task, Request $request,EntityManagerInterface $entityManager)
+    public function editAction(Task $task, Request $request, EntityManagerInterface $entityManager)
     {
         if (!$this->getUser()) {
             return $this->redirectToRoute('homepage');
@@ -73,8 +73,10 @@ class TaskController extends AbstractController
             $entityManager->flush();
 
             $this->addFlash('success', 'La tâche a bien été modifiée.');
+
             return $this->redirectToRoute('task_list');
         }
+
         return $this->render('task/edit.html.twig', [
             'form' => $form->createView(),
             'task' => $task,
@@ -83,7 +85,7 @@ class TaskController extends AbstractController
 
     /**
      * @Route("/tasks/{id}/toggle", name="task_toggle")
-     * @param Task $task
+     *
      * @return RedirectResponse
      */
     public function toggleTaskAction(Task $task)
@@ -94,12 +96,14 @@ class TaskController extends AbstractController
         $task->toggle(!$task->isDone());
         $this->getDoctrine()->getManager()->flush();
 
-        if ($task->isDone() == 1) {
-        $this->addFlash('success', sprintf('La tâche %s a bien été marquée comme faite.', $task->getTitle()));
-        return $this->redirectToRoute('task_list');
+        if (1 == $task->isDone()) {
+            $this->addFlash('success', sprintf('La tâche %s a bien été marquée comme faite.', $task->getTitle()));
+
+            return $this->redirectToRoute('task_list');
         } else {
-        $this->addFlash('success', sprintf('La tâche %s a bien été marquée comme non faite.', $task->getTitle()));
-        return $this->redirectToRoute('task_list');
+            $this->addFlash('success', sprintf('La tâche %s a bien été marquée comme non faite.', $task->getTitle()));
+
+            return $this->redirectToRoute('task_list');
         }
     }
 
@@ -111,13 +115,14 @@ class TaskController extends AbstractController
         if (!$this->getUser()) {
             return $this->redirectToRoute('homepage');
         }
-        $task = $this->getDoctrine()->getRepository(Task::class)->findBy(['isDone' => 1],['createdAt' => 'DESC']);
+        $task = $this->getDoctrine()->getRepository(Task::class)->findBy(['isDone' => 1], ['createdAt' => 'DESC']);
+
         return $this->render('task/done.html.twig', ['tasks' => $task]);
     }
 
     /**
      * @Route("/tasks/{id}/delete", name="task_delete")
-     * @param Task $task
+     *
      * @return RedirectResponse
      */
     public function deleteTaskAction(Task $task)
@@ -125,7 +130,7 @@ class TaskController extends AbstractController
         if (!$this->getUser()) {
             return $this->redirectToRoute('homepage');
         }
-        if ($task->getUser()->getUsername() == 'Anonyme' && $this->getUser()->isAdmin()) {
+        if ('Anonyme' == $task->getUser()->getUsername() && $this->getUser()->isAdmin()) {
             $em = $this->getDoctrine()->getManager();
             $em->remove($task);
             $em->flush();
@@ -136,6 +141,7 @@ class TaskController extends AbstractController
         }
         if ($task->getUser() != $this->getUser()) {
             $this->addFlash('error', 'Vous ne pouvez modifier que les taches que vous avez crées');
+
             return$this->redirectToRoute('task_list');
         }
         $em = $this->getDoctrine()->getManager();
@@ -151,6 +157,7 @@ class TaskController extends AbstractController
 
     /**
      * @Route("/admin/anotasks", name="task_anonymous")
+     *
      * @return Response
      */
     public function anonymousTaskList()
@@ -159,16 +166,17 @@ class TaskController extends AbstractController
         if ($user) {
             if ($user->isAdmin()) {
                 $tasks = $this->getDoctrine()->getRepository(Task::class)->findBy(['user' => null]);
-                return $this->render('task/anonymoustask.html.twig', ['tasks'=> $tasks]);
+
+                return $this->render('task/anonymoustask.html.twig', ['tasks' => $tasks]);
             }
         }
+
         return $this->redirectToRoute('homepage');
     }
 
     /**
      * @Route("/admin/taskto/{id}", name="task_change")
-     * @param Task $task
-     * @param EntityManagerInterface $entityManager
+     *
      * @return RedirectResponse
      */
     public function taskToAnonymous(Task $task, EntityManagerInterface $entityManager)
@@ -181,9 +189,11 @@ class TaskController extends AbstractController
                 $entityManager->persist($task);
                 $entityManager->flush();
                 $this->addFlash('success', 'L\'auteur de la tache a bien été modifié');
+
                 return $this->redirectToRoute('task_anonymous');
             }
         }
+
         return $this->redirectToRoute('homepage');
     }
 }

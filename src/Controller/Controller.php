@@ -13,7 +13,7 @@ class Controller extends AbstractController
     public function indexAction()
     {
         $user = $this->getUser();
-        if ($user == null) {
+        if (null == $user) {
             return $this->redirectToRoute('app_login');
         }
 

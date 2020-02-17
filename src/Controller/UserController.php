@@ -15,6 +15,7 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 class UserController extends AbstractController
 {
     // *** ALL USER CONTROLLER IS FOR ROLE_ADMIN ONLY *** //
+
     /**
      * @Route("/admin/users", name="user_list")
      */
@@ -26,15 +27,13 @@ class UserController extends AbstractController
                 return $this->render('user/list.html.twig', ['users' => $this->getDoctrine()->getRepository(User::class)->findAll()]);
             }
         }
+
         return $this->redirectToRoute('homepage');
     }
 
     /**
      * @Route("/admin/users/{id}/edit", name="user_edit")
-     * @param User $user
-     * @param Request $request
-     * @param EntityManagerInterface $entityManager
-     * @param UserPasswordEncoderInterface $passwordEncoder
+     *
      * @return RedirectResponse|Response
      */
     public function editAction(User $user, Request $request, EntityManagerInterface $entityManager, UserPasswordEncoderInterface $passwordEncoder)
@@ -46,7 +45,7 @@ class UserController extends AbstractController
                 $form->handleRequest($request);
 
                 if ($form->isSubmitted() && $form->isValid()) {
-                    if ($form->get('password')->getData() != null) {
+                    if (null != $form->get('password')->getData()) {
                         $user->setPassword(
                             $passwordEncoder->encodePassword(
                                 $user,
@@ -61,16 +60,17 @@ class UserController extends AbstractController
 
                     return $this->redirectToRoute('user_list');
                 }
+
                 return $this->render('user/edit.html.twig', ['form' => $form->createView(), 'user' => $user]);
             }
         }
+
         return $this->redirectToRoute('homepage');
     }
 
     /**
      * @Route("/admin/users/{id}/delete", name="user_delete")
-     * @param User $user
-     * @param EntityManagerInterface $entityManager
+     *
      * @return RedirectResponse
      */
     public function deleteAction(User $user, EntityManagerInterface $entityManager)
@@ -81,18 +81,18 @@ class UserController extends AbstractController
                 $entityManager->remove($user);
                 $entityManager->flush();
 
-                $this->addFlash('success','L\'utilisateur a bien été supprimé');
+                $this->addFlash('success', 'L\'utilisateur a bien été supprimé');
 
                 return $this->redirectToRoute('user_list');
             }
         }
+
         return $this->redirectToRoute('homepage');
     }
 
     /**
      * @Route("/admin/changerole/{id}", name="user_changerole")
-     * @param User $user
-     * @param EntityManagerInterface $entityManager
+     *
      * @return RedirectResponse
      */
     public function changeRole(User $user, EntityManagerInterface $entityManager)
@@ -105,16 +105,19 @@ class UserController extends AbstractController
                     $entityManager->persist($user);
                     $entityManager->flush();
                     $this->addFlash('success', 'Le ROLE a bien été changé en USER');
+
                     return $this->redirectToRoute('user_list');
                 } elseif (!$user->isAdmin()) {
                     $user->setRoles(['ROLE_ADMIN']);
                     $entityManager->persist($user);
                     $entityManager->flush();
                     $this->addFlash('success', 'Le ROLE a bien été changé en ADMIN');
+
                     return $this->redirectToRoute('user_list');
                 }
             }
         }
+
         return $this->redirectToRoute('homepage');
     }
 }

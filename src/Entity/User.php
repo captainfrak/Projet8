@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Table("user")
@@ -132,9 +132,9 @@ class User implements UserInterface
                 $task->setUser(null);
             }
         }
+
         return $this;
     }
-
 
     public function isAdmin(): bool
     {
@@ -148,11 +148,13 @@ class User implements UserInterface
 
     /**
      * @param $roles
+     *
      * @return User
      */
     public function setRoles($roles)
     {
         $this->roles = $roles;
+
         return $this;
     }
 }

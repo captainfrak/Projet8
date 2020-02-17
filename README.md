@@ -18,4 +18,15 @@ and don't forget to add your config in .env file
 
     DATABASE_URL=mysql://user:password@db_adress:db_port/symfony
 
-##(2) 
+lunch the local server
+
+    php bin/console server:start
+    
+
+##(2) Tests
+
+To lunch the tests (globally), run
+
+    php bin/phpunit --coverage-html test-coverage
+    
+after you can open the index.html in coverage-test folder to see the report

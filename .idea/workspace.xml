@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="refacto">
+    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/symfony.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contribution.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/P8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/P8.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Controller/Controller.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/Controller.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Controller/RegistrationController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/RegistrationController.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Controller/SecurityController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/SecurityController.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Controller/TaskController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/TaskController.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Controller/UserController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/UserController.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Controller/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Controller/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Entity/Task.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Entity/Task.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Entity/User.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Entity/User.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Entity/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Entity/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Entity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Entity/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Form/RegistrationFormType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/RegistrationFormType.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Form/TaskType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/TaskType.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Form/UserType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/UserType.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Form/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Form/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Kernel.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Kernel.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Migrations/Version20200124151810.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/Version20200124151810.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Migrations/Version20200206164145.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/Version20200206164145.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Migrations/Version20200206190955.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/Version20200206190955.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Migrations/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Migrations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Migrations/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Repository/TaskRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Repository/TaskRepository.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Repository/UserRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Repository/UserRepository.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Repository/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Repository/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Repository/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Repository/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Security/LoginAuthenticator.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Security/LoginAuthenticator.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Security/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Security/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/Security/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Security/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/TaskType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/TaskType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SecurityControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SecurityControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TaskControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TaskControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task/anonymoustask.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task/anonymoustask.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task/create.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task/done.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task/done.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task/list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +170,8 @@
       <path value="$PROJECT_DIR$/vendor/nelmio/alice" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XO4mFJjP6OrjYujdjEHMFemgi2" />
@@ -190,14 +187,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Database" />
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/testsFixture" />
       <recent name="$PROJECT_DIR$/tests/EntityTest" />
       <recent name="$PROJECT_DIR$/templates/task" />
-      <recent name="$PROJECT_DIR$/templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -474,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581870323673</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="refacto &amp; code coverage">
+      <created>1581871454121</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1581871454121</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -490,7 +495,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="templates files //change some stuff in base TBC" />
     <MESSAGE value="add : add bootstrap 4 layout to twig config" />
     <MESSAGE value="refacto : put back the 70px padding-top on the main container" />
     <MESSAGE value="add: add new method doneTasks() to deal with the already done tasks" />
@@ -515,7 +519,8 @@
     <MESSAGE value="add: remove loginCheck() method (was not used)" />
     <MESSAGE value="add: change &quot;route&quot; fir changeRole() method and addFlash() message" />
     <MESSAGE value="add: files for nelmio_alice fixtures bundle" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: files for nelmio_alice fixtures bundle" />
+    <MESSAGE value="refacto &amp; code coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="refacto &amp; code coverage" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1988" y="266" key="#CLI_Interpreters" timestamp="1581429984100">
@@ -543,20 +548,24 @@
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581072233755" />
     <state x="2051" y="318" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581443188274" />
-    <state x="1499" y="87" width="1362" height="798" key="CommitChangelistDialog2" timestamp="1581870818696">
+    <state x="1499" y="87" width="1362" height="798" key="CommitChangelistDialog2" timestamp="1581871453685">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077925965" />
-    <state x="1499" y="87" width="1362" height="798" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581870818696" />
+    <state x="1499" y="87" width="1362" height="798" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581871453685" />
     <state x="2233" y="427" key="NewPhpClassDialog" timestamp="1581441865572">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="2233" y="427" key="NewPhpClassDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581441865572" />
-    <state x="1867" y="278" key="Vcs.Push.Dialog.v2" timestamp="1581870328108">
+    <state x="1909" y="243" key="SettingsEditor" timestamp="1581881363960">
+      <screen x="1440" y="64" width="1920" height="1080" />
+    </state>
+    <state x="1909" y="243" key="SettingsEditor/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581881363960" />
+    <state x="1867" y="278" key="Vcs.Push.Dialog.v2" timestamp="1581871458394">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077934466" />
-    <state x="1867" y="278" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581870328108" />
+    <state x="1867" y="278" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581871458394" />
     <state x="1540" y="164" width="1720" height="880" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1581870287533">
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>

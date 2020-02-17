@@ -14,9 +14,6 @@ class RegistrationController extends AbstractController
 {
     /**
      * @Route("/admin/register", name="app_register")
-     * @param Request $request
-     * @param UserPasswordEncoderInterface $passwordEncoder
-     * @return Response
      */
     public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
     {
@@ -42,13 +39,16 @@ class RegistrationController extends AbstractController
                     $entityManager->flush();
 
                     $this->addFlash('success', 'Nouvel utilisateur enregistré.');
+
                     return $this->redirectToRoute('user_list');
                 }
+
                 return $this->render('registration/register.html.twig', [
                     'registrationForm' => $form->createView(),
                 ]);
             }
         }
+
         return $this->redirectToRoute('homepage');
     }
 }
