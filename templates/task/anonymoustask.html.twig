@@ -31,6 +31,12 @@
                         <a href="{{ path('task_delete', {'id' : task.id }) }}" class="btn btn-danger btn-sm">supprimer</a>
                     </td>
                 </tr>
+            {% else %}
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-4 text-center">
+                    <div class="alert alert-success" role="alert">
+                        Parfait il n'y a pas de tâches sans utilisateurs!
+                    </div>
+                </div>
             {% endfor %}
             </tbody>
         </table>

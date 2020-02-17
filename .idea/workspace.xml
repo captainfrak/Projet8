@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="Change to respect Symfony coding standards">
+    <list default="true" id="b8a437a3-facb-4c12-b5cd-84e4bbfc4d5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contribution.md" beforeDir="false" afterPath="$PROJECT_DIR$/contribuer_au_projet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task/anonymoustask.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task/anonymoustask.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -460,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581898095122</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Change to respect Symfony coding standards">
+      <created>1581945228983</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1581945228983</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -529,10 +534,10 @@
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581072233755" />
     <state x="2051" y="318" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581443188274" />
-    <state x="44" y="17" width="1362" height="798" key="CommitChangelistDialog2" timestamp="1581936012361">
+    <state x="44" y="17" width="1362" height="798" key="CommitChangelistDialog2" timestamp="1581945228861">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581936012361" />
+    <state x="44" y="17" width="1299" height="841" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581945228861" />
     <state x="1499" y="87" width="1362" height="798" key="CommitChangelistDialog2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581898094943" />
     <state x="2233" y="427" key="NewPhpClassDialog" timestamp="1581441865572">
       <screen x="1440" y="64" width="1920" height="1080" />
@@ -542,10 +547,10 @@
       <screen x="1440" y="64" width="1920" height="1080" />
     </state>
     <state x="1909" y="243" key="SettingsEditor/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581881363960" />
-    <state x="1867" y="278" key="Vcs.Push.Dialog.v2" timestamp="1581898097195">
-      <screen x="1440" y="64" width="1920" height="1080" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1581945230417">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581077934466" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@0.0.1440.900" timestamp="1581945230417" />
     <state x="1867" y="278" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.64.1920.1080@1440.64.1920.1080" timestamp="1581898097195" />
     <state x="1540" y="164" width="1720" height="880" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1581870287533">
       <screen x="1440" y="64" width="1920" height="1080" />
